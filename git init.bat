@@ -7,8 +7,11 @@ git config  --replace-all user.email johndoe@gmail.com
 git config  --replace-all user.name "John Doe"
 git branch -m master main
 git branch -m main Main
+echo git init.bat > .gitignore
+echo git ini.bat >> .gitignore
 git add .
-git commit -m "Commit git init.bat"
+git commit -m "Arquivo irrelevante."
+
 echo Gerador de estrutura > README.MD
 git add .
 git commit -m "Commit Gerador de estrutura"
@@ -17,31 +20,47 @@ git checkout fn1
 echo Funcionalidade 1 > README.MD
 git add .
 git commit -m "Commit fn1"
+
+
 git branch fn2
 git checkout fn2
 echo Funcionalidade 2 > README.MD
 git add .
 git commit -m "Commit fn2"
+
+
 git branch fn3
 git checkout fn3
 echo Funcionalidade 3 > README.MD
 git add .
 git commit -m "Commit fn3"
+
+
 git branch fn4
 git checkout fn4
 echo Funcionalidade 4 > README.MD
 git add .
 git commit -m "Commit fn4"
+
+
 git branch fn5
 git checkout fn5
 echo Funcionalidade 5 > README.MD
 git add .
 git commit -m "Commit fn5"
+
+
 git branch develop
 git checkout develop
 echo Develop > README.MD
 git add .
 git commit -m "Commit develop"
+
+
+git checkout main
+git rm .gitignore
+git add .
+git commit -m "Commit git init.bat"
 
 
 git branch
@@ -55,8 +74,6 @@ echo Link com comandos: https://comandosgit.github.io/ > codigos.txt
 start codigos.txt
 git add .
 git commit -m "Commit codigos.txt"
-
-git checkout develop 
 
 
 start "" "C:\Program Files\Git\git-bash.exe"
