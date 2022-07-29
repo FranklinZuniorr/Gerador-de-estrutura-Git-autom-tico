@@ -1,10 +1,10 @@
 echo off
 
 git init
-git config --global user.email JonhDoe@gmail.com
-git config --global user.name "Jonh Doe"
-git config  --replace-all user.email JonhDoe@gmail.com
-git config  --replace-all user.name "Jonh Doe"
+git config --global user.email johndoe@gmail.com
+git config --global user.name "John Doe"
+git config  --replace-all user.email johndoe@gmail.com
+git config  --replace-all user.name "John Doe"
 git branch -m master main
 git branch -m main Main
 git add .
